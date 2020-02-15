@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Bookmark landing page</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.con/css?family=Rubik&display=swap"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<a class="site-logo" href="index.html">
+					<img src="images/logo-bookmark.svg" alt="website-logo" />
+				</a>
+
+				<nav class="site-navigation">
+					<ul class="site-navigation__list">
+						<li class="site-navigation-item">
+							<a class="site-navigation__link" href="http://">Features</a>
+						</li>
+
+						<li class="site-navigation-item">
+							<a class="site-navigation__link" href="http://">Pricing</a>
+						</li>
+
+						<li class="site-navigation-item">
+							<a class="site-navigation__link" href="http://">Contact</a>
+						</li>
+
+						<li class="site-navigation-item">
+							<a class="site-navigation__link btn btn--login" href="http://"
+								>Login</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<button class="hamburger">
+					<span class="hamburger__bar"></span>
+					<span class="hamburger__bar"></span>
+					<span class="hamburger__bar"></span>
+				</button>
+				<div class="menu">
+					<a class="menu__logo" href="#">
+						<img src="images/logo-bookmark-mobile.svg" alt="logo" />
+					</a>
+					<ul class="menu__list">
+						<li class="menu-item">
+							<a class="menu__link" href="#">Features</a>
+						</li>
+
+						<li class="menu-item">
+							<a class="menu__link" href="#">Pricing</a>
+						</li>
+
+						<li class="menu-item">
+							<a class="menu__link" href="#">Contact</a>
+						</li>
+
+						<li class="menu-item">
+							<a class="menu__link menu__btn" href="#">Login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<section class="section section-1">
+			<div class="container">
+				<div class="row">
+					<div class="text-container">
+						<h1 class="text-container__headline">A Simple Bookmark Manager</h1>
+						<p class="text-container__body">
+							A clean and simple interface to organize your favourite websites.
+							Open a new browser tab and see your sites load instantly. Try it
+							for free.
+						</p>
+						<div class="text-container__buttons">
+							<a class="btn btn--primary" href="#">Get it on Chrome</a>
+							<a class="btn" href="#">Get it on Firefox</a>
+						</div>
+					</div>
+					<img
+						class="section__image"
+						src="images/illustration-hero.svg"
+						alt="illustation of bookmarks"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section class="section tab">
+			<div class="container">
+				<div class="row">
+					<div class="text-container">
+						<h2 class="text-container__headline">Features</h2>
+						<p class="text-container__body">
+							Our aim is to make it quick and easy for you to access your
+							favourite websites. Your bookmarks sync between your devices so
+							you can access them on the go.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<ul class="row tab-list">
+					<li class="tab-list__item">
+						<a class="tab-list__link active" id="simple" href="#"
+							>Simple Bookmarking</a
+						>
+					</li>
+
+					<li class="tab-list__item">
+						<a class="tab-list__link" id="search" href="#">Speedy Searching</a>
+					</li>
+					<li class="tab-list__item">
+						<a class="tab-list__link" id="share" href="#">Easy Sharing</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="decorator decorator--middle"></div>
+
+			<div class="simple-tab-content tab__content view">
+				<div class="container">
+					<div class="row">
+						<div class="text-container">
+							<h3 class="text-container__headline">Bookmark in one click</h3>
+							<p class="text-container__body">
+								Organize your bookmarks however you like. Our simple
+								drag-and-drop interface gives you complete control over how you
+								manage your favourite sites.
+							</p>
+							<a class="btn btn--primary" href="#">More Info</a>
+						</div>
+						<img
+							class="tab__image"
+							src="images/illustration-features-tab-1.svg"
+							alt="picture for tab1"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="search-tab-content tab__content">
+				<div class="container">
+					<div class="row">
+						<div class="text-container">
+							<h3 class="text-container__headline">Intelligent search</h3>
+							<p class="text-container__body">
+								Our powerful search feature will help you find saved sites in no
+								time at all. No need to trawl through all of your bookmarks.
+							</p>
+							<div class="text-container__buttons">
+								<a class="btn btn--primary" href="#">More Info</a>
+							</div>
+						</div>
+						<img
+							class="tab__image"
+							src="images/illustration-features-tab-2.svg"
+							alt="picture for tab2"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="share-tab-content tab__content">
+				<div class="container">
+					<div class="row">
+						<div class="text-container">
+							<h3 class="text-container__headline">Share your bookmarks</h3>
+							<p class="text-container__body">
+								Easily share your bookmarks and collections with others. Create
+								a shareable link that you can send at the click of a button.
+							</p>
+							<div class="text-container__buttons">
+								<a class="btn btn--primary" href="#">More Info</a>
+							</div>
+						</div>
+						<img
+							class="tab__image"
+							src="images/illustration-features-tab-3.svg"
+							alt="picture for tab3"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-3">
+			<div class="container">
+				<div class="row">
+					<div class="text-container">
+						<h3 class="text-container__headline">Download the extension</h3>
+						<p class="text-container__body">
+							We’ve got more browsers in the pipeline. Please do let us know if
+							you’ve got a favourite you’d like us to prioritize.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="card">
+						<img
+							src="images/logo-chrome.svg"
+							alt="chrome-logo"
+							class="card__image"
+						/>
+						<div class="card__body">
+							<h3>Add to Chrome</h3>
+							<p>Minimum version 62</p>
+							<a class="btn btn--large" href="#">Add & Install Extension</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<img
+							src="images/logo-firefox.svg"
+							alt="chrome-logo"
+							class="card__image"
+						/>
+						<div class="card__body">
+							<h3>Add to Firefox</h3>
+							<p>Minimum version 55</p>
+							<a class="btn btn--large" href="#">Add & Install Extension</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<img
+							src="images/logo-opera.svg"
+							alt="chrome-logo"
+							class="card__image"
+						/>
+						<div class="card__body">
+							<h3>Add to Opera</h3>
+							<p>Minimum version 46</p>
+							<a class="btn btn--large" href="#">Add & Install Extension</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-4">
+			<div class="container">
+				<div class="row">
+					<div class="text-container">
+						<h2 class="text-container__headline">Frequently Asked Questions</h2>
+						<p class="text-container__body">
+							Here are some of our FAQs. If you have any other questions you’d
+							like answered please feel free to email us.
+						</p>
+					</div>
+
+					<ul class="accordion">
+						<li class="accordion-item open-tray">
+                            
+                                <h3 class="accordion-item__header">
+                                    <span>What is Bookmark?</span>
+                                    <span class="arrow"></span>
+                                </h3>
+                                
+                            
+							<p class="accordion-item__body">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+								tincidunt justo eget ultricies fringilla. Phasellus blandit
+								ipsum quis quam ornare mattis.
+							</p>
+						</li>
+
+						<li class="accordion-item">
+							<h3 class="accordion-item__header">
+                                <span>How can I request a new browser?</span>
+                                <span class="arrow"></span>
+                            </h3>
+
+							<p class="accordion-item__body">
+								Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+								massa,ultricies non ligula. Suspendisse imperdiet. Vivamus
+								luctus eros aliquet convallis ultricies. Mauris augue massa,
+								ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+								aliquet convallis ultricies. Mauris augue massa, ultricies non
+								ligula. Suspendisse imperdiet.
+							</p>
+						</li>
+
+						<li class="accordion-item">
+                            
+							<h3 class="accordion-item__header">
+                                <span>Is there a mobile app?</span>
+                                <span class="arrow"></span>
+                            </h3>
+                            
+							<p class="accordion-item__body">
+								Sed consectetur quam id neque fermentum accumsan. Praesent
+								luctus vestibulum dolor, ut condimentum urna vulputate eget.
+								Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+								Sed sollicitudin ex et ultricies bibendum.
+							</p>
+						</li>
+
+						<li class="accordion-item">
+							<h3 class="accordion-item__header">
+                                <span>What about other Chromium browsers?</span>
+                                <span class="arrow"></span>
+                            </h3>
+                            
+							<p class="accordion-item__body">
+								Integer condimentum ipsum id imperdiet finibus. Vivamus in
+								placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+								gravida pellentesque non ut velit.
+							</p>
+						</li>
+					</ul>
+					<a class="btn btn--primary" href="#">More Info</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-5">
+			<div class="container">
+				<div class="row">
+					<h2 class="headline headline--light">
+						Stay up-to-date with what we’re doing
+					</h2>
+					<p>35,000+ already joined</p>
+
+					<form class="form">
+						<input
+							class="form-control form__field"
+							type="text"
+							placeholder="Enter your email address"
+						/>
+						<button class="btn btn--form form-control">Contact Us</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<a href="#" class="site-logo--footer">
+						<img src="images/logo-bookmark-mobile.svg" alt="logo">
+					</a>
+
+					<nav class="site-navigation site-navigation--footer">
+						<ul class="site-navigation__list">
+							<li class="site-navigation-item">
+								<a class="site-navigation__link" href="http://">Features</a>
+							</li>
+
+							<li class="site-navigation-item">
+								<a class="site-navigation__link" href="http://">Pricing</a>
+							</li>
+
+							<li class="site-navigation-item">
+								<a class="site-navigation__link" href="http://">Contact</a>
+							</li>
+						</ul>
+					</nav>
+
+					<ul class="icons">
+						<li class="icon__item">
+							<a class="icon__link" href="#">
+								<img src="images/icon-facebook.svg" alt="facebook" />
+							</a>
+						</li>
+
+						<li class="icon-item">
+							<a class="icon__link" href="#">
+								<img src="images/icon-twitter.svg" alt="twitter" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container"></div>
+			<p class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Emmanuel Chinonso</a>.
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
