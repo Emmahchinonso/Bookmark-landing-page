@@ -455,7 +455,8 @@ img{
 }
 
 .arrow{
-    transition: 1s ease;
+    transition: .3s ease;
+    font-size: 1.6rem;
 }
 
 .open-tray .arrow{
