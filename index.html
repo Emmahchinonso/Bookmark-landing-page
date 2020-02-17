@@ -13,12 +13,20 @@
 		/>
 
         <title>Frontend Mentor | Bookmark landing page</title>
-        
+        <!-- Font Awesome-->
+        <script src="https://kit.fontawesome.com/e2335626de.js" crossorigin="anonymous"></script>
         <!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
+        <div class="modal">
+            <div class="modal__content">
+                <p>This website is not a real site, i removed the normal function of the links, so the links don't go anywhere.</p>
+            </div>
+            <button class="modal__button">cancel</button>
+        </div>
+
 		<header class="header">
 			<div class="container">
 				<a class="site-logo" href="index.html">
@@ -71,8 +79,24 @@
 
 						<li class="menu-item">
 							<a class="menu__link menu__btn" href="#">Login</a>
-						</li>
-					</ul>
+                        </li>
+                        
+                        
+                    </ul>
+                    <ul class="icons icons--menu">
+                        <li class="icon__item">
+                            <a class="icon__link" href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+
+                        <li class="icon-item">
+                            <a class="icon__link" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
 				</div>
 			</div>
 		</header>
@@ -221,7 +245,7 @@
 						<div class="card__body">
 							<h3>Add to Chrome</h3>
 							<p>Minimum version 62</p>
-							<a class="btn btn--large" href="#">Add & Install Extension</a>
+							<a class="btn .btn--primary btn--large" href="#">Add & Install Extension</a>
 						</div>
 					</div>
 
@@ -339,11 +363,15 @@
 					<p>35,000+ already joined</p>
 
 					<form class="form">
-						<input
-							class="form-control form__field"
-							type="text"
-							placeholder="Enter your email address"
-						/>
+                        <span class="input-wrapper" data-content = "">
+                            <input
+                                class="form-control form__field"
+                                type="text"
+                                placeholder="Enter your email address"
+                                pattern = "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                                required
+                            />
+                        </span>
 						<button class="btn btn--form form-control">Contact Us</button>
 					</form>
 				</div>
@@ -376,13 +404,13 @@
 					<ul class="icons">
 						<li class="icon__item">
 							<a class="icon__link" href="#">
-								<img src="images/icon-facebook.svg" alt="facebook" />
+								<i class="fab fa-facebook-square"></i>
 							</a>
 						</li>
 
 						<li class="icon-item">
 							<a class="icon__link" href="#">
-								<img src="images/icon-twitter.svg" alt="twitter" />
+								<i class="fab fa-twitter"></i>
 							</a>
 						</li>
 					</ul>

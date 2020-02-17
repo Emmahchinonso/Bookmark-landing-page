@@ -1,4 +1,20 @@
 const selector = element => document.querySelector(element);
+/** Modal **/
+window.addEventListener('DOMContentLoaded', () => {
+    // prevent default behaviour of link
+    Array.from(document.querySelectorAll('a'))
+    .forEach(link => link.addEventListener('click', (e) => {
+        e.preventDefault();
+    }))
+
+    
+    document.querySelector('.modal').classList.add('pop');
+});
+
+selector('.modal__button').addEventListener('click', () =>{
+    selector('.modal').classList.remove('pop');
+})
+/** End of Modal **/
 
 selector(".hamburger").addEventListener("click", () => {
 	document.body.classList.toggle("open");
@@ -36,5 +52,35 @@ selector('.accordion').addEventListener('click', (e) => {
             accordionItemClass.remove('open-tray');
         }
     }
-   
+});
+
+// validate form
+var form = selector('.form');
+
+form.setAttribute('novalidate', 'true');
+
+const getError = validity => {
+    if(validity.valid) return;
+
+    if(validity.valueMissing) return 'Please fill in your email';
+
+    if(validity.patternMismatch) return "Whoops make sure it's an email";
+};
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let input = selector('.form__field');
+    let inputValidity = input.validity;
+    var errorText = getError(inputValidity);
+    console.log(errorText);
+    if(errorText){
+        input.classList.add('error');
+        input.parentElement.setAttribute('data-content', errorText);
+        input.parentElement.classList.add('error-holder')
+        return;
+    }
+    input.classList.remove('error');
+    input.parentElement.setAttribute('data-content', '');
+    input.parentElement.classList.remove('error-holder')
 })
+
