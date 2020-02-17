@@ -842,6 +842,17 @@ img{
     }
 }
 
+@media (max-width: 326px){
+    .text-container__buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container__buttons .btn{
+        margin-top: 1rem;;
+    }
+}
+
 .attribution {
     font-size: 17px;
     text-align: center;
